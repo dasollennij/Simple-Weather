@@ -121,7 +121,7 @@ function App() {
       {error && <p className="text-red-700 font-bold">{error}</p>}
 
       {weather && (
-        <div className="bg-white rounded shadow p-6 w-80 text-center">
+        <div className=" bg-gray-800  rounded shadow p-6 w-80 text-center">
           <h2 className="text-2xl font-bold mb-2">{weather.name}</h2>
           <p className="text-xl">{weather.main.temp}°C</p>
           <p className="capitalize">{weather.weather[0].description}</p>
