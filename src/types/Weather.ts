@@ -7,9 +7,5 @@ export interface WeatherData {
     weather: {
         description: string;
         icon: string;
-    };
-    daily: {
-        dt: string,
-        summary: string
-    }[]
+    }[];
 }
