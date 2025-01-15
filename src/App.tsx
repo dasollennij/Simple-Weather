@@ -8,7 +8,7 @@ function App() {
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
 
-  const API_KEY = "d40dcc8061a3f1251840e46149de8c2d";
+  const API_KEY = import.meta.env.VITE_OPENWEATHERMAP_API_KEY
 
   useEffect(() => {
     fetchWeatherByGeolocationOnLoad();
